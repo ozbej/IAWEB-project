@@ -4,130 +4,113 @@ title = 'My New Hugo Site'
 theme = "blank"
 
 [menu]
-[[menu.main]]
-  identifier = 'home'
-  name = 'home'
-  pre = "<i class='fa fa-heart'></i>"
-  url = '/home/'
-  
-[[menu.main]]
-  name = 'getting started'
-  post = "<span class='alert'>New!</span>"
-  pre = "<i class='fa fa-road'></i>"
-  url = '/getting-started/'
-  weight = -100
 
 [[menu.main]]
-  identifier = 'Schedule'
-  name = 'schedule'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Schedule'
+  identifier = 'schedule'
   url = '/schedule/'
 
 [[menu.main]]
-  identifier = 'Test Slots'
-  name = 'test_slots'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Test Slots'
+  identifier = 'test_slots'
   url = '/schedule/test_slots/'
+  parent = "schedule"
 
 [[menu.main]]
-  identifier = 'Grading review'
-  name = 'Grading_review'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Grading review'
+  identifier = 'grading_review'
   url = '/schedule/grading_review/'
+  parent = "schedule"
 
 [[menu.main]]
-  identifier = 'Excercises'
-  name = 'excercises'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Excercises'
+  identifier = 'excercises'
   url = '/excercises/'
 
 [[menu.main]]
-  identifier = 'Exercise 1'
-  name = 'exercise_1'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Exercise 1'
+  identifier = 'exercise_1'
   url = '/excercises/exercise_1/'
+  parent = "excercises"
 
 [[menu.main]]
-  identifier = 'Exercise 2'
-  name = 'exercise_2'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Exercise 2'
+  identifier = 'exercise_2'
   url = '/excercises/exercise_2/'
+  parent = "excercises"
 
 [[menu.main]]
-  identifier = 'Exercise 3'
-  name = 'exercise_3'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Exercise 3'
+  identifier = 'exercise_3'
   url = '/excercises/exercise_3/'
+  parent = "excercises"
 
 [[menu.main]]
-  identifier = 'MC Test'
-  name = 'mc_test'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'MC Test'
+  identifier = 'mc_test'
   url = '/excercises/mc_test/'
+  parent = "excercises"
 
 [[menu.main]]
-  identifier = 'Materials'
-  name = 'materials'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Materials'
+  identifier = 'materials'
   url = '/materials/'
 
 [[menu.main]]
-  identifier = 'Heuristic Evaluation Plan'
-  name = 'heuristic_evaluation_plan'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Heuristic Evaluation Plan'
+  identifier = 'heuristic_evaluation_plan'
   url = '/materials/heuristic_evaluation_plan/'
+  parent = "materials"
 
 [[menu.main]]
-  identifier = 'Heuristic Evaluation Report'
-  name = 'heuristic_evaluation_report'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Heuristic Evaluation Report'
+  identifier = 'heuristic_evaluation_report'
   url = '/materials/heuristic_evaluation_report/'
+  parent = "materials"
 
 [[menu.main]]
-  identifier = 'Guides'
-  name = 'guides'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Guides'
+  identifier = 'guides'
   url = '/guides/'
 
 [[menu.main]]
-  identifier = 'Using Webex'
-  name = 'using_webex'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Using Webex'
+  identifier = 'using_webex'
   url = '/guides/using_webex/'
+  parent = "guides"
 
 [[menu.main]]
-  identifier = 'Using Sapphire'
-  name = 'using_sapphire'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Using Sapphire'
+  identifier = 'using_sapphire'
   url = '/guides/using_sapphire/'
+  parent = "guides"
 
 [[menu.main]]
-  identifier = 'Session Capture'
-  name = 'session_capture'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Session Capture'
+  identifier = 'session_capture'
   url = '/guides/session_capture/'
+  parent = "guides"
 
 [[menu.main]]
-  identifier = 'Video Editing'
-  name = 'video_editing'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Video Editing'
+  identifier = 'video_editing'
   url = '/guides/video_editing/'
+  parent = "guides"
 
 [[menu.main]]
-  identifier = 'Video Transcoding'
-  name = 'video_transcoding'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Video Transcoding'
+  identifier = 'video_transcoding'
   url = '/guides/video_transcoding/'
+  parent = "guides"
 
 [[menu.main]]
-  identifier = 'Validating HTML'
-  name = 'validating_html'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Validating HTML'
+  identifier = 'validating_html'
   url = '/guides/validating_html/'
+  parent = "guides"
 
 [[menu.main]]
-  identifier = 'Example Reports'
-  name = 'example_reports'
-  pre = "<i class='fa fa-heart'></i>"
+  name = 'Example Reports'
+  identifier = 'example_reports'
   url = '/example_reports/'
 
