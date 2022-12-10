@@ -17,133 +17,114 @@ theme = "blank"
   url = '/getting-started/'
   weight = -100
 
-[menu]
 [[menu.main]]
   identifier = 'Schedule'
   name = 'schedule'
   pre = "<i class='fa fa-heart'></i>"
   url = '/schedule/'
 
-[menu]
 [[menu.main]]
   identifier = 'Test Slots'
   name = 'test_slots'
   pre = "<i class='fa fa-heart'></i>"
   url = '/schedule/test_slots/'
 
-[menu]
 [[menu.main]]
   identifier = 'Grading review'
   name = 'Grading_review'
   pre = "<i class='fa fa-heart'></i>"
   url = '/schedule/grading_review/'
 
-[menu]
 [[menu.main]]
   identifier = 'Excercises'
   name = 'excercises'
   pre = "<i class='fa fa-heart'></i>"
   url = '/excercises/'
 
-[menu]
 [[menu.main]]
   identifier = 'Exercise 1'
   name = 'exercise_1'
   pre = "<i class='fa fa-heart'></i>"
   url = '/excercises/exercise_1/'
 
-[menu]
 [[menu.main]]
   identifier = 'Exercise 2'
   name = 'exercise_2'
   pre = "<i class='fa fa-heart'></i>"
   url = '/excercises/exercise_2/'
 
-[menu]
 [[menu.main]]
   identifier = 'Exercise 3'
   name = 'exercise_3'
   pre = "<i class='fa fa-heart'></i>"
   url = '/excercises/exercise_3/'
 
-[menu]
 [[menu.main]]
   identifier = 'MC Test'
   name = 'mc_test'
   pre = "<i class='fa fa-heart'></i>"
   url = '/excercises/mc_test/'
 
-[menu]
 [[menu.main]]
   identifier = 'Materials'
   name = 'materials'
   pre = "<i class='fa fa-heart'></i>"
   url = '/materials/'
 
-[menu]
 [[menu.main]]
   identifier = 'Heuristic Evaluation Plan'
   name = 'heuristic_evaluation_plan'
   pre = "<i class='fa fa-heart'></i>"
   url = '/materials/heuristic_evaluation_plan/'
 
-[menu]
 [[menu.main]]
   identifier = 'Heuristic Evaluation Report'
   name = 'heuristic_evaluation_report'
   pre = "<i class='fa fa-heart'></i>"
   url = '/materials/heuristic_evaluation_report/'
 
-[menu]
 [[menu.main]]
   identifier = 'Guides'
   name = 'guides'
   pre = "<i class='fa fa-heart'></i>"
   url = '/guides/'
 
-[menu]
 [[menu.main]]
   identifier = 'Using Webex'
   name = 'using_webex'
   pre = "<i class='fa fa-heart'></i>"
   url = '/guides/using_webex/'
 
-[menu]
 [[menu.main]]
   identifier = 'Using Sapphire'
   name = 'using_sapphire'
   pre = "<i class='fa fa-heart'></i>"
   url = '/guides/using_sapphire/'
 
-[menu]
 [[menu.main]]
   identifier = 'Session Capture'
   name = 'session_capture'
   pre = "<i class='fa fa-heart'></i>"
   url = '/guides/session_capture/'
 
-[menu]
 [[menu.main]]
   identifier = 'Video Editing'
   name = 'video_editing'
   pre = "<i class='fa fa-heart'></i>"
   url = '/guides/video_editing/'
 
-[menu]
 [[menu.main]]
   identifier = 'Video Transcoding'
   name = 'video_transcoding'
   pre = "<i class='fa fa-heart'></i>"
   url = '/guides/video_transcoding/'
 
-[menu]
 [[menu.main]]
   identifier = 'Validating HTML'
   name = 'validating_html'
   pre = "<i class='fa fa-heart'></i>"
   url = '/guides/validating_html/'
 
-[menu]
 [[menu.main]]
   identifier = 'Example Reports'
   name = 'example_reports'
