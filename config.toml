@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Human Computer Interaction'
 theme = "blank"
 
 [menu]
@@ -23,33 +23,33 @@ theme = "blank"
   parent = "schedule"
 
 [[menu.main]]
-  name = 'Excercises'
-  identifier = 'excercises'
-  url = '/excercises/'
+  name = 'Exercises'
+  identifier = 'exercises'
+  url = '/exercises/'
 
 [[menu.main]]
   name = 'Exercise 1'
   identifier = 'exercise_1'
-  url = '/excercises/exercise_1/'
-  parent = "excercises"
+  url = '/exercises/exercise_1/'
+  parent = "exercises"
 
 [[menu.main]]
   name = 'Exercise 2'
   identifier = 'exercise_2'
-  url = '/excercises/exercise_2/'
-  parent = "excercises"
+  url = '/exercises/exercise_2/'
+  parent = "exercises"
 
 [[menu.main]]
   name = 'Exercise 3'
   identifier = 'exercise_3'
-  url = '/excercises/exercise_3/'
-  parent = "excercises"
+  url = '/exercises/exercise_3/'
+  parent = "exercises"
 
 [[menu.main]]
   name = 'MC Test'
   identifier = 'mc_test'
-  url = '/excercises/mc_test/'
-  parent = "excercises"
+  url = '/exercises/mc_test/'
+  parent = "exercises"
 
 [[menu.main]]
   name = 'Materials'
