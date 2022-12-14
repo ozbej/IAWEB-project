@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.menuitem {
+  padding: 1em;
+  margin: 1em;
+  list-style: none;
+  font-weight: 700;
+}
+
+.submenuitem {
+  list-style: none;
+  font-weight: 400;
+  margin-top: 0.4em;
+}
