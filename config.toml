@@ -1,14 +1,15 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://example.org/hci'
 languageCode = 'en-us'
 title = 'Human Computer Interaction'
 theme = "blank"
+uglyurls = true
 
 [menu]
 
 [[menu.main]]
   name = 'Schedule'
   identifier = 'schedule'
-  url = '/schedule/'
+  url = '/schedule.html'
 
 [[menu.main]]
   name = 'Test Slots'
