@@ -1,17 +1,18 @@
 <header>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
   {{ with .Site.Menus.main }}
   <nav>
-    <ul>
+    <ul class="menu">
       {{ range . }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ if .HasChildren }}
-      <ul>
-        {{ range .Children }}
-        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      <li class="menuitem"><a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ if .HasChildren }}
+        <ul>
+          {{ range .Children }}
+          <li class="submenuitem"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
         {{ end }}
-      </ul>
-      {{ end }}
+      </li>
       {{ end }}
     </ul>
   </nav>
