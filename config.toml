@@ -7,111 +7,135 @@ uglyurls = true
 [menu]
 
 [[menu.main]]
-  name = 'Schedule'
-  identifier = 'schedule'
-  url = '/schedule.html'
+  name = 'Home'
+  identifier = 'home'
+  url = '/'
+  weight = -10
 
 [[menu.main]]
-  name = 'Test Slots'
-  identifier = 'test_slots'
-  url = '/schedule/test_slots/'
+  name = 'Schedule'
+  identifier = 'schedule'
+  url = '/schedule/'
+  weight = 10
+
+[[menu.main]]
+  name = 'First MC test'
+  identifier = 'first_mc_test'
+  url = '/schedule/first-mc-test/'
   parent = "schedule"
+  weight = 10
+
+[[menu.main]]
+  name = 'Second MC test'
+  identifier = 'second_mc_test'
+  url = '/schedule/second-mc-test/'
+  parent = "schedule"
+  weight = 20
 
 [[menu.main]]
   name = 'Grading review'
   identifier = 'grading_review'
-  url = '/schedule/grading_review/'
+  url = '/schedule/grading-review/'
   parent = "schedule"
+  weight = 30
 
 [[menu.main]]
   name = 'Exercises'
   identifier = 'exercises'
-  url = '/exercises/'
+  url = '/practicals/'
+  weight = 20
 
 [[menu.main]]
   name = 'Exercise 1'
   identifier = 'exercise_1'
-  url = '/exercises/exercise_1/'
+  url = '/practicals/exercise-1/'
   parent = "exercises"
+  weight = 10
 
 [[menu.main]]
   name = 'Exercise 2'
   identifier = 'exercise_2'
-  url = '/exercises/exercise_2/'
+  url = '/practicals/exercise-2/'
   parent = "exercises"
+  weight = 20
 
 [[menu.main]]
   name = 'Exercise 3'
   identifier = 'exercise_3'
-  url = '/exercises/exercise_3/'
+  url = '/practicals/exercise-3/'
   parent = "exercises"
+  weight = 30
 
 [[menu.main]]
-  name = 'MC Test'
-  identifier = 'mc_test'
-  url = '/exercises/mc_test/'
+  name = 'Exercise 4'
+  identifier = 'exercise_4'
+  url = '/practicals/exercise-4/'
   parent = "exercises"
+  weight = 40
 
 [[menu.main]]
   name = 'Materials'
   identifier = 'materials'
   url = '/materials/'
-
-[[menu.main]]
-  name = 'Heuristic Evaluation Plan'
-  identifier = 'heuristic_evaluation_plan'
-  url = '/materials/heuristic_evaluation_plan/'
-  parent = "materials"
-
-[[menu.main]]
-  name = 'Heuristic Evaluation Report'
-  identifier = 'heuristic_evaluation_report'
-  url = '/materials/heuristic_evaluation_report/'
-  parent = "materials"
+  weight = 30
 
 [[menu.main]]
   name = 'Guides'
   identifier = 'guides'
-  url = '/guides/'
+  url = '/practicals/'
+  weight = 40
 
 [[menu.main]]
   name = 'Using Webex'
   identifier = 'using_webex'
-  url = '/guides/using_webex/'
+  url = '/guides/guide-using-webex/'
   parent = "guides"
+  weight = 10
 
 [[menu.main]]
   name = 'Using Sapphire'
   identifier = 'using_sapphire'
-  url = '/guides/using_sapphire/'
+  url = '/guides/guide-using-sapphire/'
   parent = "guides"
+  weight = 20
 
 [[menu.main]]
   name = 'Session Capture'
   identifier = 'session_capture'
-  url = '/guides/session_capture/'
+  url = '/guides/guide-session-capture/'
   parent = "guides"
+  weight = 30
 
 [[menu.main]]
   name = 'Video Editing'
   identifier = 'video_editing'
-  url = '/guides/video_editing/'
+  url = '/guides/guide-video-editing/'
   parent = "guides"
+  weight = 40
 
 [[menu.main]]
   name = 'Video Transcoding'
   identifier = 'video_transcoding'
-  url = '/guides/video_transcoding/'
+  url = '/guides/guide-video-transcoding/'
   parent = "guides"
+  weight = 50
 
 [[menu.main]]
   name = 'Validating HTML'
   identifier = 'validating_html'
-  url = '/guides/validating_html/'
+  url = '/guides/guide-valudating-html/'
   parent = "guides"
+  weight = 60
 
 [[menu.main]]
-  name = 'Example Reports'
-  identifier = 'example_reports'
-  url = '/example_reports/'
+  name = 'Previous Reports'
+  identifier = 'previous_reports'
+  url = '/reports/'
+  weight = 50
+
+[[menu.main]]
+  name = 'Tutors'
+  identifier = 'tutors'
+  url = '/tutors/'
+  weight = 60
 
