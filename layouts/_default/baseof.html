@@ -9,6 +9,9 @@
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/standard.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+	{{ range .Params.custom_css }}
+	<link rel="stylesheet" href="{{ . | relURL }}">
+	{{ end }}
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
