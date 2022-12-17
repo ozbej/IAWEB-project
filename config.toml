@@ -15,27 +15,27 @@ uglyurls = true
 [[menu.main]]
   name = 'Schedule'
   identifier = 'schedule'
-  url = '/schedule/'
+  url = '/schedule.html'
   weight = 10
 
 [[menu.main]]
   name = 'First MC test'
   identifier = 'first_mc_test'
-  url = '/schedule/first-mc-test/'
+  url = '/practicals/mc1-slots.html'
   parent = "schedule"
   weight = 10
 
 [[menu.main]]
   name = 'Second MC test'
   identifier = 'second_mc_test'
-  url = '/schedule/second-mc-test/'
+  url = '/practicals/mc2-slots.html'
   parent = "schedule"
   weight = 20
 
 [[menu.main]]
   name = 'Grading review'
   identifier = 'grading_review'
-  url = '/schedule/grading-review/'
+  url = '/practicals/grading-review.html'
   parent = "schedule"
   weight = 30
 
@@ -48,35 +48,35 @@ uglyurls = true
 [[menu.main]]
   name = 'Exercise 1'
   identifier = 'exercise_1'
-  url = '/practicals/exercise-1/'
+  url = '/practicals/exer1.html'
   parent = "exercises"
   weight = 10
 
 [[menu.main]]
   name = 'Exercise 2'
   identifier = 'exercise_2'
-  url = '/practicals/exercise-2/'
+  url = '/practicals/exer2.html'
   parent = "exercises"
   weight = 20
 
 [[menu.main]]
   name = 'Exercise 3'
   identifier = 'exercise_3'
-  url = '/practicals/exercise-3/'
+  url = '/practicals/exer3.html'
   parent = "exercises"
   weight = 30
 
 [[menu.main]]
   name = 'Exercise 4'
   identifier = 'exercise_4'
-  url = '/practicals/exercise-4/'
+  url = '/practicals/mctest.html'
   parent = "exercises"
   weight = 40
 
 [[menu.main]]
   name = 'Materials'
   identifier = 'materials'
-  url = '/materials/'
+  url = '/practicals/materials/'
   weight = 30
 
 [[menu.main]]
@@ -88,42 +88,42 @@ uglyurls = true
 [[menu.main]]
   name = 'Using Webex'
   identifier = 'using_webex'
-  url = '/guides/guide-using-webex/'
+  url = '/guide-using-webex.html'
   parent = "guides"
   weight = 10
 
 [[menu.main]]
   name = 'Using Sapphire'
   identifier = 'using_sapphire'
-  url = '/guides/guide-using-sapphire/'
+  url = '/practicals/guide-using-sapphire.html'
   parent = "guides"
   weight = 20
 
 [[menu.main]]
   name = 'Session Capture'
   identifier = 'session_capture'
-  url = '/guides/guide-session-capture/'
+  url = '/practicals/guide-session-capture.html'
   parent = "guides"
   weight = 30
 
 [[menu.main]]
   name = 'Video Editing'
   identifier = 'video_editing'
-  url = '/guides/guide-video-editing/'
+  url = '/practicals/guide-video-editing.html'
   parent = "guides"
   weight = 40
 
 [[menu.main]]
   name = 'Video Transcoding'
   identifier = 'video_transcoding'
-  url = '/guides/guide-video-transcoding/'
+  url = '/practicals/guide-video-transcoding.html'
   parent = "guides"
   weight = 50
 
 [[menu.main]]
   name = 'Validating HTML'
   identifier = 'validating_html'
-  url = '/guides/guide-valudating-html/'
+  url = '/practicals/validation'
   parent = "guides"
   weight = 60
 
@@ -136,6 +136,6 @@ uglyurls = true
 [[menu.main]]
   name = 'Tutors'
   identifier = 'tutors'
-  url = '/tutors/'
+  url = '/practicals/tutors'
   weight = 60
 
