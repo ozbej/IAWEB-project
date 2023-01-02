@@ -137,7 +137,7 @@ uglyurls = true
 [[menu.main]]
   name = 'Validating HTML'
   identifier = 'validating_html'
-  url = '/guides/guide-valudating-html.html'
+  url = '/guides/validation'
   parent = "guides"
   weight = 70
 
