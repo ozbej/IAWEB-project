@@ -100,6 +100,13 @@ uglyurls = true
   weight = 20
 
 [[menu.main]]
+  name = 'Using Morae'
+  identifier = 'using_morae'
+  url = '/guides/guide-using-morae/'
+  parent = "guides"
+  weight = 25
+
+[[menu.main]]
   name = 'Session Capture'
   identifier = 'session_capture'
   url = '/guides/guide-session-capture/'
