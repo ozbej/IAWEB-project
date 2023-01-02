@@ -67,11 +67,14 @@
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
+/* Show the dropdown menu on hover. Useless with
+ mobile devices. Is this really necessary? May be refactored.*/
 .dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
   display: block;
 }
 
+/* Used via JavaScript, toggling visibility of dropdown
+ content with this. Necessary for tabbing. */
 .show {
     display: block;
 }
