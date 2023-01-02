@@ -3,14 +3,17 @@
   <nav class="navbar">
     {{ range . }}
     <div class="dropdown">
-      <a class="dropbtn" href="{{ .URL | relURL }}">{{ .Name }}</a>
-        {{ if .HasChildren }}
-        <div class="dropdown-content">
-          {{ range .Children }}
-            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-            {{ end }}
-        </div>
+      {{ if gt (len .Children) 1 }}
+      <a class="dropbtn" alt="dropdown menu link" href="javascript:void(0)">{{ .Name }}</a>
+      <div class="dropdown-content">
+	<a href="{{ .URL | relURL }}">{{ .Name }}</a>
+        {{ range .Children }}
+        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
         {{ end }}
+      </div>
+      {{ else }}
+      <a class="dropbtn" href="{{ .URL | relURL }}">{{ .Name }}</a>
+      {{ end }}
     </div>
     {{ end }}
   </nav>

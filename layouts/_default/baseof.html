@@ -7,6 +7,7 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<script src="{{ "js/navbar.js" | relURL }}"></script>
 	<link rel="stylesheet" href="{{ "css/standard.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
 	{{ range .Params.custom_css }}
