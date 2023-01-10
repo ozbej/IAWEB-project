@@ -6,13 +6,13 @@ toggle between hiding and showing the dropdown content */
 window.onload = () => {
     const btns = document.getElementsByClassName('dropbtn');
     for (let element of btns){
-        element.addEventListener('focus', dropItems);
+        element.addEventListener('click', showItems);
         element.parentNode.addEventListener('focusout', hideItems);
     }
 }
 
 // Just toggle the .show class, if there appears to be dropdown content
-function dropItems(e){
+function showItems(e){
     let parent = e.target.parentNode;
     if (parent.children.length > 1){
         parent.children[1].classList.toggle("show");
@@ -36,5 +36,6 @@ function hideItems(e){
         // Unfocused from dropdown link
         parent.classList.remove("show");
     }
+
 }
 

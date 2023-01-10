@@ -4,9 +4,13 @@
     {{ range . }}
     <div class="dropdown">
       {{ if gt (len .Children) 1 }}
-      <a class="dropbtn" alt="dropdown menu link" href="javascript:void(0)">{{ .Name }}</a>
+        <a class="dropbtn" alt="dropdown menu link" href="javascript:void(0)">
+          {{ .Name }}
+          <img src="./down-arrow.png" alt="down arrow" class="icon down-arrow" width="10" height="10">
+          <img src="./up-arrow.png" alt="up arrow" class="icon up-arrow" width="10" height="10">
+        </a>
       <div class="dropdown-content">
-	<a href="{{ .URL | relURL }}">{{ .Name }}</a>
+	      <a href="{{ .URL | relURL }}">{{ .Name }}</a>
         {{ range .Children }}
         <a href="{{ .URL | relURL }}">{{ .Name }}</a>
         {{ end }}
