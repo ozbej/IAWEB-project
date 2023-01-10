@@ -4,7 +4,7 @@
 1. Install Hugo (non-extended version is enough) via [official website](https://gohugo.io/installation/)
 2. Install git via [official website](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
-## Development
+## Running
 1. Clone our repo with `git clone https://github.com/ozbej/IAWEB-project.git`
 2. Navigate into `IAWEB-project` folder
 3. Run `hugo server -D` to run the site locally at `http://localhost:1313/hci/`
