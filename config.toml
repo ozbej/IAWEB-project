@@ -1,8 +1,9 @@
-baseURL = 'http://example.org/hci'
+baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Human Computer Interaction'
 theme = "blank"
 uglyurls = true
+relativeURLs = true
 
 [menu]
 
