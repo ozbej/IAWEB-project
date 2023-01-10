@@ -36,6 +36,13 @@
 /*  margin: 0; /* Important for vertical align on mobile phones */
 /*}
 
+/* Show the dropdown menu on hover. Useless with
+ mobile devices. Is this really necessary? May be refactored.*/
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+  display: block;
+}
+
+
 /* Add a red background color to navbar links on hover */
 .navbar .dropbtn:hover, .navbar .dropbtn:focus, .dropdown:hover, .dropdown:focus .dropbtn {
   background-color: rgb(99, 182, 63);

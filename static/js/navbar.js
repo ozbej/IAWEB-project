@@ -6,7 +6,7 @@ toggle between hiding and showing the dropdown content */
 window.onload = () => {
     const btns = document.getElementsByClassName('dropbtn');
     for (let element of btns){
-        element.addEventListener('click', dropItems);
+        element.addEventListener('touchstart', dropItems);
         element.parentNode.addEventListener('focusout', hideItems);
     }
 }
