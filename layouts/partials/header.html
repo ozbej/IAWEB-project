@@ -1,21 +1,44 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+  function myFunction() {
+    var x = document.getElementById("navigation");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
 <header>
   {{ with .Site.Menus.main }}
-  <nav class="navbar">
-    {{ range . }}
-    <div class="dropdown">
-      {{ if gt (len .Children) 1 }}
-      <a class="dropbtn" alt="dropdown menu link" href="javascript:void(0)">{{ .Name }}</a>
-      <div class="dropdown-content">
-	<a href="{{ .URL | relURL }}">{{ .Name }}</a>
-        {{ range .Children }}
-        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-        {{ end }}
-      </div>
-      {{ else }}
-      <a class="dropbtn" href="{{ .URL | relURL }}">{{ .Name }}</a>
-      {{ end }}
+  <nav aria-label="HCI Course Website">
+    <div id="hamburger-div">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-    {{ end }}
+    <ul id="navigation" class="navigation">
+      {{ range . }}
+      <li>
+        {{ if gt (len .Children) 1 }}
+        <button type="button" aria-expanded="true" aria-controls="{{ .Identifier }}">{{ .Name }}</button>
+        <ul id="{{ .Identifier }}" class="dropdown-item">
+          <li>
+            <a href="{{ .URL }}">{{ .Name }} Overview</a>
+          </li>
+          {{ range .Children }}
+          <li>
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+
+        {{ else }}
+        <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ul>
   </nav>
   {{ end }}
 </header>
