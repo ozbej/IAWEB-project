@@ -10,6 +10,7 @@
 	<script src="{{ "js/navbar.js" | relURL }}"></script>
 	<link rel="stylesheet" href="{{ "css/standard.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/custom.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "css/breadcrumbs.css" | relURL }}">
 	{{ range .Params.custom_css }}
 	<link rel="stylesheet" href="{{ . | relURL }}">
 	{{ end }}
@@ -19,6 +20,7 @@
 </head>
 <body>
 	{{ partial "header" . }}
+	{{ partial "breadcrumbs" . }}
 	{{ block "main" . }}{{ end }}
 </body>
 </html>
