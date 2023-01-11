@@ -11,7 +11,7 @@
 }
 
 /* Links inside the navbar */
-.navbar .dropbtn, .hamburger {
+.navbar .dropbtn, .hamburger-icon {
   float: left;
   font-size: 1em;
   color: white;
@@ -87,6 +87,9 @@
 
 .hamburger {
   display: none;
+  background-color: transparent;
+  border: none;
+  width: 20%;
 }
 
 /* Used via JavaScript, toggling visibility of dropdown

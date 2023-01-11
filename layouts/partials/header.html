@@ -1,7 +1,9 @@
 <header>
   {{ with .Site.Menus.main }}
   <nav class="navbar">
-    <img src="{{"/menu.png" | relURL}}" alt="hamburger menu" class="hamburger" width="20" height="20" onclick=hamburgerToggle()>
+    <button class="hamburger" onclick=hamburgerToggle()>
+      <img src="{{"/menu.png" | relURL}}" alt="hamburger menu" class="hamburger-icon" width="20" height="20">
+    </button>
     {{ range . }}
     <div class="dropdown">
     {{ if gt (len .Children) 1 }}
