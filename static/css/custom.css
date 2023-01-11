@@ -11,7 +11,7 @@
 }
 
 /* Links inside the navbar */
-.navbar .dropbtn {
+.navbar .dropbtn, .hamburger {
   float: left;
   font-size: 16px;
   color: white;
@@ -40,12 +40,12 @@
 /*  margin: 0; /* Important for vertical align on mobile phones */
 /*}
 
-/* Show the dropdown menu on hover. Useless with
- mobile devices. Is this really necessary? May be refactored.*/
-.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
-  display: block;
+/* Show the dropdown menu on hover (only on desktop, since on mobile the touch event counts as hover).*/
+@media (hover: hover) and (pointer: fine) {
+  .dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+    display: block;
+  }
 }
-
 
 /* Add a green background color to navbar links on hover */
 .navbar .dropbtn:hover, .navbar .dropbtn:focus, .dropdown:hover, .dropdown:focus .dropbtn {
@@ -79,24 +79,37 @@
   background-color: #ddd;
 }
 
+/* Position arrow in nav buttons */
+.icon {
+  align-self: center;
+  padding-left: 4px;
+}
+
+.hamburger {
+  display: none;
+}
+
 /* Used via JavaScript, toggling visibility of dropdown
  content with this. Necessary for tabbing. */
 .show {
     display: block;
 }
 
-.icon {
-  align-self: center;
-  padding-left: 4px;
-}
-
-.up-arrow {
-  display: none;
-}
-
 
 @media only screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  .navbar .dropbtn {
+    width: 100%;
+  }
+
+  .hamburger {
+    display: block;
   }
 }

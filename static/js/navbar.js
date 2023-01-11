@@ -39,3 +39,14 @@ function hideItems(e){
 
 }
 
+function hamburgerToggle(e) {
+    var items = document.getElementsByClassName("dropdown");
+    for (let item of items) {
+        if (item.style.display === "block") {
+            item.style.display = "none";
+        } else {
+        item.style.display = "block";
+        }
+    }
+  }
+
