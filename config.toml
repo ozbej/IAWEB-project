@@ -1,9 +1,9 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Human Computer Interaction'
-theme = "blank"
 uglyurls = true
 relativeURLs = true
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]
 
 [menu]
 
