@@ -558,24 +558,6 @@ table#coursetable td {
 
 
 
-table#exercise-table {
-  margin: 2em 0 2em 0;
-  border-collapse: collapse;
-}
-
-table#exercise-table th {
-  padding: 0.2em 0.2em 0.2em 0.2em;
-  border: 0.1em solid #777;
-}
-
-table#exercise-table td {
-  padding: 0.2em 0.2em 0.2em 0.2em;
-  vertical-align: top;
-  border: 0.1em solid #777;
-}
-
-
-
 
 
 
@@ -900,3 +882,59 @@ div.posters img {
   margin-right: 1em;
 }
 
+
+
+
+/* CSS for mobile */
+@media screen and (max-width: 600px) {
+  .table {
+    border: 0;
+  }
+  
+  .table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
+  
+  .table tr {
+    display: block;
+    border: 0;
+    margin-bottom: .625em;
+    border: 1px solid darkgray;
+  }
+  
+  .table td {
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    min-height: 1em;
+    border: 0;
+    border-bottom: 1px solid darkgray;
+  }
+  
+  .table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    padding-right: 1em;
+  }
+
+  /* Columns of exercise table */
+  table#exercise-table td:nth-of-type(1):before { content: "Ex"; }
+  table#exercise-table td:nth-of-type(2):before { content: "Title"; }
+  table#exercise-table td:nth-of-type(3):before { content: "Type"; }
+  table#exercise-table td:nth-of-type(4):before { content: "Announce"; }
+  table#exercise-table td:nth-of-type(5):before { content: "Hand-In"; }
+  table#exercise-table td:nth-of-type(6):before { content: "Present"; }
+  table#exercise-table td:nth-of-type(7):before { content: "Slots"; }
+  table#exercise-table td:nth-of-type(8):before { content: "Points"; }
+  table#exercise-table td:nth-of-type(9):before { content: "Percent"; }
+
+  /* Columns of schedule table */
+  table#schedule-table td:nth-of-type(1):before { content: "Date"; }
+  table#schedule-table td:nth-of-type(2):before { content: "Venue"; }
+  table#schedule-table td:nth-of-type(3):before { content: "Details"; }
+}
