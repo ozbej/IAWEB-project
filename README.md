@@ -14,5 +14,6 @@
 1. Clone our repo with `git clone https://github.com/ozbej/IAWEB-project.git`
 2. Navigate into `IAWEB-project` folder
 3. Delete `public` folder if it exists
-3. Run `hugo --baseURL="<url>"`, where `<url>` is the domain where the page will be hosted, e.g. `https://courses.isds.tugraz.at/`. Alternatively, `baseURL` can be configured in `config.toml`.
-4. The files for the webpage will be output into `public/`.
+3. Run `hugo` to generate webpage into `public/`.
+5. Run `gencache.sh` script to generate a list of files for service worker cache, which is used for the PWA.
+  The list of files will be inserted into `public/sw.js`.
