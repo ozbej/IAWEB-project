@@ -13,6 +13,10 @@
   }
   
   .breadcrumb li + li:before {
-    content: ">";
+    content: "➜";
     padding: 0.3rem;
+  }
+
+  .breadcrumbTitle {
+    text-transform: capitalize;
   }

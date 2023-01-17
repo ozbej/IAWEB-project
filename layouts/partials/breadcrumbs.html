@@ -1,14 +1,14 @@
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $url := replace $url ".html" "" }}
+{{ $url := replace $url "-" " " }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
 <ul class="breadcrumb">
-    {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+  <li><a href="/">Home</a></li>
+  {{ range $index, $element := split $url "/" }}
+    {{ $.Scratch.Add "path" $element }}
+      {{ if ne $element "" }}
+      <li><a class="breadcrumbTitle" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a></li>
+      {{ $.Scratch.Add "path" "/" }}
+      {{ end }}
+  {{ end }}
 </ul>
-  
-{{ define "breadcrumbnav" }}
-{{ if .p1.Parent }}
-    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )}}
-{{ else if not .p1.IsHome }}
-    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )}}
-{{ end }}
-<li{{ if eq .p1 .p2 }} class="active"{{ end }}>
-    <a href="{{ .p1.RelPermalink }}">{{ .p1.Title }}</a>
-</li>
-{{ end }}
