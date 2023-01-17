@@ -17,7 +17,7 @@
 
     if (url !== `/${fileName(url)}`) {
       const path = basePath(url);
-      CACHED = CACHED.map((f) => `${path}/${f.replace(/index.html$/, '')}`);
+      CACHED = CACHED.map((f) => `${path}${f}`);
     }
     event.waitUntil(precache());
   });
