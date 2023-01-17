@@ -9,7 +9,7 @@
       "purpose": "any"
     }
   ],
-  "start_url": "/hci/",
+  "start_url": "/",
   "id": "hci",
   "display": "standalone",
   "orientation": "portrait",
