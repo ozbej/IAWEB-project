@@ -7,7 +7,7 @@
 	<title>{{ .Title }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-	<script src="{{ "js/navbar.js" | relURL }}"></script>
+	<script src="{{ "js/standard.js" | relURL }}"></script>
 	<script src="{{ "registerSW.js" | relURL }}"></script>
 	<link rel="manifest" href="{{ "manifest.json" | relURL }}">
 	<link rel="stylesheet" href="{{ "css/standard.css" | relURL }}">
