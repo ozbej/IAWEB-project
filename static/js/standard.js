@@ -12,8 +12,10 @@ window.onload = () => {
 
     /* Call responsive table functions */
     AddTableARIA();
-    ResponsiveCellHeaders("schedule-table");
-    ResponsiveCellHeaders("exercise-table");
+    if (window.innerWidth < 600) {
+      ResponsiveCellHeaders("schedule-table");
+      ResponsiveCellHeaders("exercise-table");
+    }
 }
 
 // Just toggle the .show class, if there appears to be dropdown content
