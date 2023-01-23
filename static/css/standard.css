@@ -897,6 +897,7 @@ div.posters img {
   .table tbody td::before {
     font-weight: bold;
     font-size: 1.1em;
+    display: block;
   }
 
   .table tbody tr {
@@ -909,6 +910,12 @@ div.posters img {
   }
 
   .table thead {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .table tbody td::before {
     display: none;
   }
 }

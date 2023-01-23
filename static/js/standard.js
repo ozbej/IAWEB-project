@@ -12,10 +12,8 @@ window.onload = () => {
 
     /* Call responsive table functions */
     AddTableARIA();
-    if (window.innerWidth < 600) {
-      ResponsiveCellHeaders("schedule-table");
-      ResponsiveCellHeaders("exercise-table");
-    }
+    ResponsiveCellHeaders("schedule-table");
+    ResponsiveCellHeaders("exercise-table");
 }
 
 // Just toggle the .show class, if there appears to be dropdown content
@@ -62,6 +60,9 @@ function ResponsiveCellHeaders(elmID) {
     try {
       var THarray = [];
       var table = document.getElementById(elmID);
+      if (table == null) {
+        return;
+      }
       var ths = table.getElementsByTagName("th");
       for (var i = 0; i < ths.length; i++) {
         var headingText = ths[i].innerHTML;
