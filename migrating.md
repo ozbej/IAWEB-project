@@ -9,7 +9,7 @@
     ```toml
     ---
     title: "Human Computer Interaction Schedule"
-    custom_css: ["schedule.css"] # Page specific CSS file (omit if not needed)
+    custom_css: ["css/schedule.css"] # Page specific CSS file (omit if not needed)
     url: "/schedule" # Custom URL (can sometimes be omitted)
     aliases:
       - "/schedule.html" # For backwards compatibility with old URLs (omit if not needed)
