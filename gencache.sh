@@ -24,9 +24,11 @@ files="$(\
   # Find all files and dirs in public/ that are not excluded from cache
   xargs find public |
   # Ensure directories have trailing slash
-  xargs ls -Fd |
+  xargs ls --file-type -d |
   # Remove public/, wrap with double quotes, append comma
-  sed 's/^public/"/;s/$/", /'
+  sed 's/^public/"/;s/$/", /' |
+  # Sort files to easily verify that both PowerShell and Bash gives same output
+  sort
 )"
 
 echo "Found $(echo "$files" | wc -l) files to cache"
