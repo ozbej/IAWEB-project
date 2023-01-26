@@ -9,7 +9,7 @@
     {{ if gt (len .Children) 1 }}
       <a class="dropbtn" alt="dropdown menu link" href="javascript:void(0)">
         {{ .Name }}
-        <img src="{{"/down-arrow.png" | relURL}}" alt="down arrow" class="icon" width="10" height="10">
+        <img src="{{"/down-arrow.svg" | relURL}}" alt="down arrow" class="icon" width="10" height="10">
       </a>
       <div class="dropdown-content">
         <a href="{{ .URL | relURL }}">{{ .Name }} Overview</a>
