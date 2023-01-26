@@ -1,6 +1,6 @@
 {{ $.Scratch.Add "path" "" }}
 <ul class="breadcrumb">
-  <li><a href="/">Home</a></li>
+  <li><a href="/">🏠</a></li>
   {{ range $index, $element := split .RelPermalink "/" }}
     {{ $.Scratch.Add "path" $element }}
     {{ $title := replace $element ".html" "" }}
