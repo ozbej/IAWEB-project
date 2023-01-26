@@ -475,3 +475,11 @@ tr.noclassentry div.classtitle {
   font-size: 1em;
 }
 
+
+
+/* CSS for mobile */
+@media screen and (max-width: 600px) {
+  #schedule-table {
+    border: none;
+  }
+}
