@@ -542,20 +542,6 @@ table.tutorstable table img {
 
 
 
-table#coursetable {
-  margin: 1em 0 1em 0;
-  border: none;
-  border-collapse: separate;
-}
-
-
-table#coursetable td {
-  vertical-align: top;
-  border: none;
-}
-
-
-
 
 
 
