@@ -1,9 +1,6 @@
 # Add excluded files in the list below
 $files = Get-ChildItem -Path ".\public\" -Recurse | Where-Object{
-$_.FullName -notlike "*public\reports\*" -and 
-$_.FullName -notlike "*.pdf" -and
-$_.FullName -notlike "*.zip" -and
-$_.FullName -notlike "*.xlsx" -and
+$_.FullName -notlike "*public\reports\*" -and
 $_.FullName -notlike "*.mp4"
 }
 

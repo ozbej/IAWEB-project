@@ -4,9 +4,6 @@ set -e
 # TODO: Add anything that should be excluded from cache to the list below (glob patterns).
 # Uses the full path (starting with public/).
 excluded=(
-  '*.pdf'
-  '*.zip'
-  '*.xlsx'
   '*.mp4'
   'public/reports/*'
 )
