@@ -24,7 +24,9 @@
 </head>
 <body>
 	{{ partial "header" . }}
-	{{ partial "breadcrumbs" . }}
+	{{ if ne .RelPermalink "/" }}
+		{{ partial "breadcrumbs" . }}
+	{{ end }}
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
 </body>
